@@ -3,9 +3,10 @@
 [![pypi package](https://img.shields.io/badge/version-v0.2.0-blue)](https://pypi.org/project/hsemotion)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/classifying-emotions-and-engagement-in-online/facial-expression-recognition-on-affectnet)](https://paperswithcode.com/sota/facial-expression-recognition-on-affectnet?p=classifying-emotions-and-engagement-in-online)
 
-This repository contains code that was developed at the HSE University during the RSF (Russian Science Foundation) project no. 20-71-10010 (Efficient audiovisual analysis of dynamical changes in emotional state based on information-theoretic approach).
+This repository contains code that was developed at the HSE University during the RSF (Russian Science Foundation) project no. 20-71-10010 (Efficient audiovisual analysis of dynamical changes in emotional state based on information-theoretic approach). The framework is being further developed in part with the support of AI Center, NUST MISiS.
 
 ## News
+- The paper "Facial Expression Recognition with Adaptive Frame Rate based on Multiple Testing Correction" has been accepted as Oral talk at [ICML 2023](https://icml.cc/Conferences/2023). The source code to reproduce the results of this paper are available at this repository, see subsections "Adaptive Frame Rate" at [abaw3_train.ipynb](https://github.com/HSE-asavchenko/face-emotion-recognition/blob/main/src/ABAW/abaw3_train.ipynb) and [train_emotions-pytorch-afew-vgaf.ipynb](https://github.com/HSE-asavchenko/face-emotion-recognition/blob/main/src/affectnet/train_emotions-pytorch-afew-vgaf.ipynb)
 - Our models let our team HSE-NN took the first place in the Learning from Synthetic Data (LSD) Challenge and the 3rd place in the Multi-Task Learning (MTL) Challenge in the [fourth Affective Behavior Analysis in-the-wild (ABAW) Competition](https://ibug.doc.ic.ac.uk/resources/eccv-2023-4th-abaw/)
 - Our models let our team HSE-NN took the 3rd place in the multi-task learning challenge, 4th places in Valence-Arousal and Expression challenges and 5th place in the Action Unite Detection Challenge in the [third Affective Behavior Analysis in-the-wild (ABAW) Competition](https://ibug.doc.ic.ac.uk/resources/cvpr-2022-3rd-abaw/). Our approach is presented in the [paper](https://arxiv.org/abs/2203.13436) accepted at CVPR 2022 ABAW Workshop.
 
@@ -54,6 +55,22 @@ pip install timm==0.4.5
 
 If you use our models, please cite the following papers:
 ```BibTex
+@inproceedings{savchenko2023facial,
+  title = 	 {Facial Expression Recognition with Adaptive Frame Rate based on Multiple Testing Correction},
+  author =       {Savchenko, Andrey},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning (ICML)},
+  pages = 	 {30119--30129},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  url={https://proceedings.mlr.press/v202/savchenko23a.html}
+}
+```
+
+```BibTex
 @inproceedings{savchenko2021facial,
   title={Facial expression and attributes recognition based on multi-task learning of lightweight neural networks},
   author={Savchenko, Andrey V.},
@@ -76,6 +93,19 @@ If you use our models, please cite the following papers:
   url={https://arxiv.org/abs/2103.17107}
 }
 ```
+
+```BibTex
+@inproceedings{Savchenko_2022_ECCVW,
+  author    = {Savchenko, Andrey V.},
+  title     = {{MT-EmotiEffNet} for Multi-task Human Affective Behavior Analysis and Learning from Synthetic Data},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV 2022) Workshops},
+  pages={45--59},
+  year={2023},
+  organization={Springer},
+  url={https://arxiv.org/abs/2207.09508}
+}
+```
+
 
 ```BibTex
 @article{savchenko2022classifying,
